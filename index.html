@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ladies Language Home of Fashion</title>
+        </head>
+    <body>
+        <header>
+            <h1>Ladies Language</h1>
+            <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+                </nav>
+        </header>
+
+        <div class="main-container">
+
+            <div class="left-side">
+                <h2>Welcome to Ladies Language Home of Fashion</h2>
+               <p>We create elegant, feminine, and stylish outfits for women who want to express confidence and beauty.</p>
+            <p>Custom tailoring • Modern & Native designs • Special occasion dresses</p>
+            
+            <a href="#gallery" class="btn">Explore Our Collection</a>
+        </div>
+
+            <div class="right-side">
+                <div class="right-side-container">
+                    <h2>Hello, Beautiful</h2>
+                    <p>Discover timeless fashion tailored just for you</p>
+                    <a href="#contact" class="btn">Book Consultation</a>
+                    </div>
+                    </div>
+                    </div>
+
+            <div id="about" class="section">
+            <h2>About Us</h2>
+            <p style="max-width: 800px; margin: 0; auto; font-size: 19px; text-align: center;">
+                Ladies Language Home of Fashion is a modern tailoring and fashion brand dedicated to creating elegant, feminine, and stylish outfits for women. We specialize in custom-made designs that combine creativity, quality craftsmanship, and attention to detail.
+            </p>
+            <p style="max-width: 800px; margin: 300px; auto 0; font-size: 19px; text-align: center;">
+                Our goal is to help every women express confidence, class and beauty through fashion.
+            </p>
+            </div>
+
+        <div id="services" class="section">
+            <h2>Our Services</h2>
+            <ul class="services-list">
+                <li>Custom-made women's outfit</li>
+                <li>Fahion designing and tailoring</li>
+                <li>Measurement and fitting services</li>
+                <li>Stylish native and modern outfits</li>
+                <li>Special occasion dresses (weddings, parties, and birthdays)</li>
+                <li>Fashion consultation</li>
+                </ul>
+                </div>
+
+        <div id="gallery" class="block">
+            <h2>Gallery of Designs</h2>
+            <div class="gallery">
+                <img src="Image1.jpeg" alt="Fashion Design 1">
+                <img src="Image2.jpeg" alt="Fashion Design 2">
+                <img src="Image3.jpeg" alt="Fashion Design 3">
+                <img src="Image4.jpeg" alt="Fashion Design 4">
+                <img src="Image5.png" alt="Fashion Design 5">
+                <img src="Image6.jpeg" alt="Fashion Design 6">
+                </div>
+                </div>
+
+       <footer>
+        <p>Ladies Language Home of Fashion • Lagos</p>
+        <p>Email: <a href="mailto:Ladieslanguagehomeoffashion@gmail.com">Ladieslanguagehomeoffashion@gmail.com</a></p>
+        <p>© 2026 - All Rights Reserved</p>
+    </footer>
+       <script>
+            function animationScroll(){
+                const sections = document.querySelectorAll('.section');
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight * 0.85) {
+                        section.classList.add('visible');
+                    }
+                });
+            }
+            window.addEventListener('scroll', () =>{
+                const header = document.querySelector('header');
+                if(window.scrollY > 100){
+                    header.classList.add('scrolled');
+                } else{
+                    header.classList.remove('scrolled');
+                }
+                animationScroll();
+            });
+            window.addEventListener('load', animationScroll);
+       </script>
+        <br>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-shading: border-box;
+                }
+                body{
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-color: #f8f8f8; /* light gray */
+                    color: #333; /* dark gray */
+                    line-height: 1.7;
+                }
+                header{
+                    background-color: #000000; /* black */
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 18px 8%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    z-index: 1000;
+                    transition: all 0.4s ease;
+                }
+                header.scrolled{
+                    background-color: rgba(0, 0, 0, 0.95); /* slightly transparent black */
+                    padding: 15px 8%;
+                    box shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                }
+                header h1{
+                    color: white;
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+                nav a{
+                    color: white;
+                    font-size: 17px;
+                    margin-left: 35px;
+                    text-decoration: none
+                    transition: color 0.3s ease;
+                }
+                nav a:hover{
+                    color: #a8a8a8; /* ash grey */
+                }
+                .main-container{
+                    display: flex;
+                    min-height: 100vh;
+                    margin-top: 75px;
+                }
+                .left-side{
+                    flex: 1;
+                    background-color: #f0f0f0; /* light gray */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 100px 70px;
+                    animation: fadeInUp 1s ease forwards;
+                }
+                .left-side h2{
+                    font-size: 45px;
+                    color: #000; /* black */;
+                    margin-bottom: 25px;
+                }
+                .left-side p{
+                    font-size: 20px;
+                    color: #444; /* dark gray */;
+                    margin-bottom: 35px;
+                    max-width: 520px;
+                }
+                .btn{
+                    background-color: #808080; /* ash grey */
+                    color: white;
+                    padding: 15px 40px;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 17px;
+                    text-decoration: none;
+                    display: inline-block;
+                    transition: all 0.4s ease;
+                }
+                .btn:hover{
+                    background-color: #000000; /* black */
+                    transform: translateY(-5px);
+                }
+                .right-side{
+                    flex: 1;
+                    background-color: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                    url('images/hero-fashion.jpeg');
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    text-align: center;
+                    padding: 60px;
+                    animation: fadeIn 1.2s ease forwards;
+                }
+                .section{
+                    padding: 90px 8%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    opacity: 0;
+                    transform: translateY(40px);
+                    transition: all 0.8s ease;
+                }
+                .section.visible{
+                   opacity: 1;
+                     transform: translateY(0);
+                }
+                .section h2{
+                    font-size: 38px;
+                    color: #000; /* black */
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+                .gallery{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                .gallery img{
+                    width: 320px;
+                    height: 420px;
+                    object-fit: cover;
+                    border: 2px solid #ddd;
+                    border-radius: 8px;
+                    transition: all 0.5s ease;
+                }
+                .gallery img:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+                }
+                #about{
+                    background-color: white;
+                }
+                #services-list li{
+                    background: white;
+                    paddding: 18px 25px;
+                    margin: 12px 0;
+                    font-size: 19px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                    transition: transform 0.3s ease;
+                }
+                .services-list li:hover{
+                    transform: translateX(10px);
+                }
+                footer{
+                    background-color: #000000; /* black */
+                    color: #c0c0c0; /* silver */
+                    text-align: center;
+                    padding: 40px 20px;
+                    font-size: 16px;
+                }
+                @keyframes fadeInUp{
+                    from{ opacity: 0; transform: translateY(50px);}
+                    to{ opacity: 1; transform: translateY(0);}
+                }
+                @keyframes fadeIn{
+                    from{ opacity: 0;}
+                    to{ opacity: 1;}
+                }
+                @media (max-width: 900px){
+                    .main-container{flex-direction: column;}
+                    .left-side, .right-side{padding: 60px 20px;}
+                
+                }
+</style>
+</script>
+</body>
+</html>
